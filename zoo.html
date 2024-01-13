@@ -2,105 +2,82 @@
 <!DOCTYPE html>
 <!--Sets the webpage language type.-->
 <html lang="en">
-    <!--Formatting and Data:-->
+    <!--Includes a title for the browser tag. Formats the webpage.-->
     <head>
-        <!--Sets the Charset & formats the webpage for multi devices.-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--A CSS reference.-->
-        <!--The CSS file referenced sets the: background color/font color/font type/alignment for "default text" on the webpage.-->
-        <link rel="stylesheet" href="stylesheet.css">
-        <!--Sets a title for the browser tab.-->
         <title>The Cincinnati Zoo</title>
     </head>
     <!--The "Contents" of the web page.-->
     <body>
-        <!--Sets a "title" for the web page. -->
+        <!--Sets the page background color.-->
+        <style>
+           body {background-color: rgb(32, 0, 0);}
+           body {font-family: "Times New Roman", serif;}
+           body {color: white;}
+        </style>
+        <!--Includes a "title" for the web page. -->
         <header>
-            <!--Formats the web page title, including adding a border.-->
+            <!--Formats the web page title.-->
             <style>
-                h1 {text-align: center;font-family: "Times New Roman", serif;color: white;border: 10px solid grey;}
+                h1 {text-align: center;}
+                h1 {font-family: "Times New Roman", serif;}
+                h1 {color: white;}
+                h1 {border: 10px solid grey;}
             </style>
             <!--The contents of the title.-->
             <h1>Intern Animal Compendium</h1>
         </header>
-        <!--Heading for each (numericaly listed) animal type. Includes hyperlinks and photos.-->
-        <ol>
-        <li><a href="https://en.wikipedia.org/wiki/Bear"><h2><u>BEARS</u></h2></a></li>
-        <img src="Bear.jpg" width="200" height="150"/>
-        <br>
-        <br>
-        <!--Unordered list of each animal within that type. Includes descriptions.-->
+        <!--Heading for each animal type.-->
+        <h2><u>Bears</u></h2>
+        <!--List of each animal within that type.-->
         <ul>
             <li>Ollie</li>
-            <font size="2">Ollie loves honey, Motley Crue and long walks on the beach. He is a curious brown bear.</font>
-            <br>
-            <br>
             <li>Mona</li>
-            <font size="2">Mona loves shredding the gnar. Salmon sandwiches will take her far!</font>
         </ul>
-        <br>
-        <li><a href="https://en.wikipedia.org/wiki/Giraffe"><h2><u>GIRAFFES</u></h2></a></li>
-        <img src="Giraffe.jpg" width="200" height="150"/>
-        <br>
-        <br>
-        <ul>
-            <li>Frankie</li>
-            <font size="2">Frankie will stick his neck out for anybody! An all around curios fella!</font>
-            <br>
-            <br>
-            <li>Coconut</li>
-            <font size="2">Coconut is allergic to almonds. Don't feed Coconut almonds.</font>
-        </ul>
-        <br>
-        <li><a href="https://en.wikipedia.org/wiki/Lion"><h2><u>LIONS</u></h2></a></li>
-        <img src="Lion.jpg" width="250" height="150"/>
-        <br>
-        <br>
-        <ul>
-            <li>Mella</li>
-            <font size="2">Why did I already use the word fella for Frankie? Perfect opportunity to say "Mella is a chill Fella". DANG IT!</font>
-            <br>
-            <br>
-            <li>Karl</li>
-            <font size="2">Karl is very playful, but always hungry. Don't overfeed Karl! He is on a diet!</font>
-        </ul>
-        <br>
-        <li><a href="https://en.wikipedia.org/wiki/Monkey"><h2><u>MONKEYS</u></h2></a></li>
-        <img src="Monkey.jpg" width="250" height="150"/>
-        <br>
-        <br>
-        <ul>
-            <li>Cookie</li>
-            <font size="2">Cookie ain't no rookie! So make sure you don't antagonize him or he will actually attack you.</font>
-            <br>
-            <br>
-            <li>Earl</li>
-            <font size="2">Earl is always the life of the party! He can swing from tree to tree with ease.</font>
-            <br>
-            <br>
-            <li>Banana Pudding</li>
-            <font size="2">Banana Pudding is so friggin' delicious. Now I want some. Dude.</font>
-        </ul>
-        <br>
-        <li><a href="https://en.wikipedia.org/wiki/Alligator"><h2><u>ALLIGATORS</u></h2></a></li>
-        <img src="Alligator.jpg" width="250" height="150"/>
-        <br>
-        <br>
-        <ul>
+        
+        <!--This is a nested element/ tag that underlines specific text that underlines the word monkeys-->
+        <h2> 
+            
+            
+            <a href="https://news.gsu.edu/2019/10/14/monkeys-outsmart-humans/" target="_blank">
+                <ins>MONKEYS</ins>
+                
+                
+            </a>
+            <img src="monkey.jpg" height=50 width 50
+        
+            
+            
+            <ol>
+                <li>Cookie</li>
+                <p>Cookie like to eat bananas.</p>
+                <li>Earl</li>
+                <p>Earl likes to eat lettuce.</p>
+                <li>Banana Pudding</li>
+                <p>Banana Pudding likes to eat carrots.</p>
+            </ol>
+    
+        
+
+        <!--The underlined word used an ins tag that is the same as the u tag, I also put a target attribute so the tab could open in a new one-->
+        <h2>
+            <a href="https://en.wikipedia.org/wiki/Alligator" target="_blank">
+                <u>ALLIGATORS</u>
+            </a>
+        </h2>
+        <img src="alligator.jpg" height="90" width="200"
+         
+        <ol>
+            
             <li>Wren</li>
-            <font size="2">Wren is my fren'.</font>
-            <br>
-            <br>
+            <p>Wren likes steak</p>
             <li>Aspen</li>
-            <font size="2">Aspen is hyper active. A little tempermental. But ultimately she's just a total sweetie.</font>
-            <br>
-            <br>
+            <p>Aspen is very shy</p>
             <li>Mika</li>
-            <font size="2">Mika is just a baby gator. Still getting her feet wet.</font>
-        </ul>
+            <p>Mika likes to eat fish</p>
         </ol>
-        <br>
-        <br>
+        
     </body>
+
 </html>
